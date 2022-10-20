@@ -6,5 +6,8 @@ use App\Animal;
 
 class Elephant extends Animal
 {
-
+    protected function getNoise(): string
+    {
+        return 'tooooouuuut';
+    }
 }

@@ -7,4 +7,9 @@
     class Fish extends Animal
     {
 
+        protected function getNoise(): string
+        {
+            return 'bloubloublou';
+        }
+
     }

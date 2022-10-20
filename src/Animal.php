@@ -13,14 +13,23 @@
         public function __construct(string $name)
         {
             $this->name = $name;
+        }
+        /**
+         * @return string
+         */
 
+        public function getName(): string
+        {
+            return $this->name;
         }
 
         /**
          * @return string
          */
-        public function getName(): string
+        abstract protected function getNoise(): string;
+
+        public function noise(): string
         {
-            return $this->name;
+            return $this->getNoise();
         }
     }
